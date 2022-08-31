@@ -131,3 +131,45 @@ a:hover {
     color: #333;
 }
 /* ---end of title container--- */
+
+
+
+
+
+/* -- start of main-FOOTER-container -- */
+footer {
+    width: 100%;
+    background-color: #1c2632;
+}
+.main-footer-container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+.footer-container {
+    padding: 16px 10px 16px 0;
+}
+.footer-container h2 {
+    padding: 10px 10px 10px 0;
+    font-size: 17px;
+    font-weight: 500;
+}
+.lang {
+    width: 80%;
+    display: flex;
+    margin: auto;
+}
+.rights {
+    width: 100%;
+    background-color: white;
+    height: 20px;
+    display: flex;
+}
+.rights p{
+    width: 80%;
+    display: flex;
+    
+    align-items: center;
+}
+/* -- end of main-footer-container -- */
