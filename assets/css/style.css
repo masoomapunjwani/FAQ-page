@@ -70,9 +70,13 @@ a:hover {
 }
 /* -----end of bottom bar menu----- */
 /* ---start of lowest menubar-- */
+.lowest-menubar-container {
+    width: 100%;
+    background-color: #e5eaef;
+}
 .lowest-menubar {
     background-color: #e5eaef;
-    width: 100%;
+    width: 80%;
     height: 30px;
 }
 .lowest-menubar-content {
