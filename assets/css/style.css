@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 11px;
+}
+.menubar{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #1c2632;
+}
+.top-menubar{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    margin: 8px auto 0 auto;
+}
+#logo {
+    width: 50px;
+}
+.top-nav-menu {
+    display: flex;
+    margin-top: auto;
+}
+nav {
+    float: left;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+}
+nav ul li {
+    list-style: none;
+    padding: 8px;
+    margin: auto 0;
+    display: flex;
+    justify-items: center;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+}
+nav ul li i {
+    color: white;
+}
+a:hover {
+    color: #FF9900;
+}
+#create-acc-btn {
+    padding: 5px 6px;
+    margin: auto 0 auto 3px;
+    background-color: #FF9900;
+    border: none;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 15px;
+}
+#create-acc-btn:hover {
+    background-color: #893101;
+}
+/* -----end of top bar menu----- */
+/* -----start of bottom bar menu----- */
+.bottom-menubar {
+    width: 95%;
+    margin: auto;
+}
+/* -----end of bottom bar menu----- */
+/* ---start of lowest menubar-- */
+.lowest-menubar {
+    background-color: #e5eaef;
+    width: 100%;
+    height: 35px;
+}
+.lowest-menubar-content {
+    width: 75%;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    color: #404141;
+}
+.lowest-menubar-content ul {
+    display: flex;
+    margin: auto;
+}
+.lowest-menubar-content ul li {
+    list-style: none;
+    padding: 4px 8px;
+    
+}
+.lowest-menubar-content ul li a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #404141;
+}
+/* --end of lowest menubar-- */
