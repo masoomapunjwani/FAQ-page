@@ -159,6 +159,25 @@ footer {
     font-size: 17px;
     font-weight: 500;
 }
+.footer-container p {
+    line-height: 16px;
+    font-size: 17px;
+}
+.footer-container p a {
+    font-size: 12px;
+    text-decoration: none;
+    color: white;
+}
+.footer-container button{
+    padding: 6px;
+    margin: auto;
+    background-color: #bd5b14;
+    border: none;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 15px;
+}
+
 .lang {
     width: 80%;
     display: flex;
