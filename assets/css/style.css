@@ -136,7 +136,11 @@ a:hover {
 }
 /* ---end of title container--- */
 
-
+.faqs{
+    width: 70%;
+    display: flex;
+    
+}
 
 
 
@@ -153,6 +157,7 @@ footer {
 }
 .footer-container {
     padding: 16px 10px 16px 0;
+    color: white;
 }
 .footer-container h2 {
     padding: 10px 10px 10px 0;
@@ -169,19 +174,25 @@ footer {
     color: white;
 }
 .footer-container button{
-    padding: 6px;
-    margin: auto;
+    padding: 6px 12px;
+    margin: 14px auto;
     background-color: #bd5b14;
     border: none;
     font-size: 13px;
     font-weight: 600;
     border-radius: 15px;
+    color: white;
 }
-
+.socials i {
+    font-size: 18px;
+    padding: 4px;
+    margin-bottom: 12px;
+}
 .lang {
     width: 80%;
     display: flex;
-    margin: auto;
+    margin: 0 auto 16px auto;
+    color: white;
 }
 .rights {
     width: 100%;
@@ -192,7 +203,10 @@ footer {
 .rights p{
     width: 80%;
     display: flex;
-    
-    align-items: center;
+    margin: 12px auto;
+    font-size: 12px;
+}
+.rights span {
+    color: #55a2ec;
 }
 /* -- end of main-footer-container -- */
