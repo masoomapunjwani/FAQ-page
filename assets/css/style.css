@@ -153,6 +153,7 @@ a:hover {
 }
 #faqs p {
     font-size: 14px;
+    margin-top: 10px;
     margin-bottom: 16px;
     line-height: 22px;
 }
