@@ -5,6 +5,7 @@
 //     .then((response) => response.json())
 //     .then((data) => {
 
+
 //       data.forEach((item) => {
 //         let body = document.querySelector("#faqs");
 //         let q = document.querySelector("#faqsquestion");
@@ -52,22 +53,48 @@ window.onload = function () {
       document.querySelector(".q11").textContent = data[10].question;
       document.querySelector(".a11").textContent = data[10].answer;
       
+      setTimeout(formSubmit(), 1000)
+      newsletterPrompt()
     });
+
 };
 
-// ====> Accordion
-const items = document.querySelectorAll(".accordion button");
-
-function toggleAccordion() {
-  const itemToggle = this.getAttribute("aria-expanded");
-
-  for (i = 0; i < items.length; i++) {
-    items[i].setAttribute("aria-expanded", "false");
-  }
-
-  if (itemToggle == "false") {
-    this.setAttribute("aria-expanded", "true");
-  }
+function formSubmit(e) {
+  let form = document.querySelector("#form")
+  form.addEventListener("submit", (e) => {
+    e.preventDefault()
+    alert("Thank you for your message, your inquiry has been received. A representative will get back to you shortly. ")
+    form.reset()
+  })
 }
 
-items.forEach((item) => item.addEventListener("click", toggleAccordion));
+function newsletterPrompt(e){
+  let button = document.querySelector("#create-acc-btn")
+  let fButton = document.querySelector("#footerBtn")
+  button.addEventListener("click", (e) => {
+    prompt("Sign Up for our monthly newsletter.")
+})
+  fButton.addEventListener("click", (e) => {
+    prompt("Sign Up for our monthly newsletter.")
+})
+}
+// ====> Accordion
+
+  const items = document.querySelectorAll(".accordion button");
+
+  function toggleAccordion() {
+    const itemToggle = this.getAttribute("aria-expanded");
+
+    for (i = 0; i < items.length; i++) {
+      items[i].setAttribute("aria-expanded", "false");
+    }
+
+    if (itemToggle == "false") {
+      this.setAttribute("aria-expanded", "true");
+    }
+  }
+
+  items.forEach((item) => item.addEventListener("click", toggleAccordion));
+
+
+

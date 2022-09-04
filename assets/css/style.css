@@ -79,7 +79,8 @@ a:hover {
 }
 
 #create-acc-btn:hover {
-    background-color: #893101;
+    filter: brightness(80%);
+    cursor: pointer;
 }
 
 /* -----end of top bar menu----- */
@@ -300,6 +301,46 @@ a:hover {
 
 /* -----End of Accordion----- */
 
+/* --FORM SECTION-- */
+.form-container {
+    width: 60%;
+    margin: 36px auto;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+form h1 {
+    font-size: 24px;
+    text-align: center;
+    padding-bottom: 12px;
+}
+form input {
+    font-size: 14px;
+    padding: 6px;
+    margin: 8px 0;
+    border-radius: 5px;
+    border: .2px solid darkgrey;
+}
+textarea {
+    font-size: 14px;
+    padding: 6px;
+    margin: 8px 0;
+    border-radius: 5px;
+    border: .2px solid darkgrey;
+}
+#submitButton {
+    width: fit-content;
+    border-radius: 15px;
+    font-size: 16px;
+    background-color: #bd5b14;
+    color: white;
+}
+#submitButton:hover {
+    filter: brightness(80%);
+}
+/* --FORM SECTION-- */
+
 /* ================================ */
 /* -- start of main-FOOTER-container -- */
 footer {
@@ -346,7 +387,10 @@ footer {
     border-radius: 15px;
     color: white;
 }
-
+.footer-container button:hover {
+    filter: brightness(80%);
+    cursor: pointer;
+}
 .socials i {
     font-size: 18px;
     padding: 4px;
