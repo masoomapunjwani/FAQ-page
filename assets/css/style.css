@@ -5,33 +5,46 @@
     padding: 0;
     font-family: 'Noto Sans', sans-serif;
     font-size: 11px;
+    box-sizing: border-box;
 }
-.menubar{
+
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.menubar {
     width: 100%;
     display: flex;
     flex-direction: column;
     background-color: #1c2632;
 }
-.top-menubar{
+
+.top-menubar {
     width: 95%;
     display: flex;
     justify-content: space-between;
     margin: 8px auto 0 auto;
 }
+
 #logo {
     width: 50px;
 }
+
 .top-nav-menu {
     display: flex;
     margin-top: auto;
 }
+
 nav {
     float: left;
 }
+
 nav ul {
     display: flex;
     flex-direction: row;
 }
+
 nav ul li {
     list-style: none;
     padding: 8px;
@@ -39,17 +52,21 @@ nav ul li {
     display: flex;
     justify-items: center;
 }
+
 nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 12px;
 }
+
 nav ul li i {
     color: white;
 }
+
 a:hover {
     color: #FF9900;
 }
+
 #create-acc-btn {
     padding: 6px 12px;
     margin: auto 0 auto 3px;
@@ -60,26 +77,31 @@ a:hover {
     border-radius: 15px;
     color: white;
 }
+
 #create-acc-btn:hover {
     background-color: #893101;
 }
+
 /* -----end of top bar menu----- */
 /* -----start of bottom bar menu----- */
 .bottom-menubar {
     width: 95%;
     margin: auto;
 }
+
 /* -----end of bottom bar menu----- */
 /* ---start of lowest menubar-- */
 .lowest-menubar-container {
     width: 100%;
     background-color: #e5eaef;
 }
+
 .lowest-menubar {
     background-color: #e5eaef;
     width: 80%;
     height: 30px;
 }
+
 .lowest-menubar-content {
     width: 75%;
     display: flex;
@@ -87,29 +109,35 @@ a:hover {
     align-items: center;
     color: #404141;
 }
+
 .lowest-menubar-content ul {
     display: flex;
     margin: auto;
 }
+
 .lowest-menubar-content ul li {
     list-style: none;
     padding: 4px 8px;
     justify-content: center;
 }
+
 .lowest-menubar-content ul li a {
     text-decoration: none;
     font-weight: 700;
     color: #404141;
 
 }
+
 .lowest-menubar-content ul li a:hover {
     color: #55a2ec;
 }
+
 #active {
     color: #55a2ec;
     text-decoration: underline 2px;
     text-underline-offset: 6px;
 }
+
 /* --end of lowest menubar-- */
 /* ---start of title container--- */
 .title-container {
@@ -118,76 +146,197 @@ a:hover {
     flex-direction: column;
     background-color: #f5f5f5;
 }
+
 .breadcrums {
     width: 80%;
     padding: 10px 0;
     margin: 0 auto;
 }
+
 .breadcrums p span {
     color: #55a2ec;
 }
+
 .page-title {
     width: 80%;
     margin: 0 auto;
 }
+
 .page-title h1 {
     font-size: 30px;
     padding-bottom: 18px;
     color: #333;
 }
+
 /* ---end of title container--- */
 
-#faqs{
+#faqs {
     width: 80%;
     display: flex;
     flex-direction: column;
     margin: 40px auto;
 }
-#faqs h2 {
-    font-size: 20px;
-    margin-bottom: 20px;
-}
+
 #faqs h4 {
     font-size: 14px;
-    margin-bottom: 16px;
-}
-#faqs p {
-    font-size: 14px;
-    margin-top: 10px;
-    margin-bottom: 16px;
-    line-height: 22px;
+    background-color: gainsboro;
+    padding: 14px;
+    cursor: pointer;
+    margin: 8px;
+    transition-duration: .5s;
+    position: relative;
+    display: block;
 }
 
+#faqs p {
+    font-size: 14px;
+    margin-bottom: 50px;
+    line-height: 22px;
+    padding: 0 14px 24px;
+    /* display: none; */
+}
+
+/* ====== */
+/* -----Accordion----- */
+* {
+    box-sizing: border-box;
+}
+
+.accordion {
+    width: 80%;
+    margin: 40px auto;
+}
+
+.accordion .accordion-item button[aria-expanded='true'] {
+    border-bottom: 1px solid #55a2ec;
+}
+
+.accordion button {
+    position: relative;
+    text-align: left;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    background-color: gainsboro;
+    padding: 14px;
+    cursor: pointer;
+    margin: 10px 0;
+    transition-duration: .5s;
+    position: relative;
+    display: block;
+}
+
+.accordion button:hover,
+.accordion button:focus {
+    cursor: pointer;
+    color: #55a2ec
+}
+
+.accordion button .question {
+    padding: 1em 1.5em 1em 0;
+}
+
+.accordion button .icon {
+    display: inline-block;
+    position: absolute;
+    margin: auto;
+    right: 10px;
+    width: 22px;
+    height: 22px;
+    border: 1px solid;
+    border-radius: 22px;
+}
+
+.accordion button .icon::before {
+    display: block;
+    position: absolute;
+    content: '';
+    top: 9px;
+    left: 5px;
+    width: 10px;
+    height: 2px;
+    background: currentColor;
+}
+
+.accordion button .icon::after {
+    display: block;
+    position: absolute;
+    content: '';
+    top: 5px;
+    left: 9px;
+    width: 2px;
+    height: 10px;
+    background: currentColor;
+}
+
+.accordion button[aria-expanded='true'] {
+    color: #03b5d2;
+}
+
+.accordion button[aria-expanded='true'] .icon::after {
+    width: 0;
+}
+
+.accordion button[aria-expanded='true']+.accordion-content {
+    opacity: 1;
+    max-height: 9em;
+    transition: all 200ms linear;
+    will-change: opacity, max-height;
+}
+
+.accordion .accordion-content {
+    width: 96%;
+    opacity: 0;
+    text-align: justify;
+    font-size: 16px;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 200ms linear, max-height 200ms linear;
+    will-change: opacity, max-height;
+    margin: 0 auto;
+}
+
+/* -----End of Accordion----- */
+
+/* ================================ */
 /* -- start of main-FOOTER-container -- */
 footer {
     width: 100%;
     background-color: #1c2632;
 }
+
 .main-footer-container {
     width: 80%;
     display: flex;
     justify-content: space-between;
     margin: auto;
 }
+
 .footer-container {
     padding: 16px 10px 16px 0;
     color: white;
 }
+
 .footer-container h2 {
     padding: 10px 10px 10px 0;
     font-size: 17px;
     font-weight: 500;
 }
+
 .footer-container p {
     line-height: 16px;
     font-size: 17px;
 }
+
 .footer-container p a {
     font-size: 12px;
     text-decoration: none;
     color: white;
 }
-.footer-container button{
+
+.footer-container button {
     padding: 6px 12px;
     margin: 14px auto;
     background-color: #bd5b14;
@@ -197,17 +346,20 @@ footer {
     border-radius: 15px;
     color: white;
 }
+
 .socials i {
     font-size: 18px;
     padding: 4px;
     margin-bottom: 12px;
 }
+
 .lang {
     width: 80%;
     display: flex;
     margin: 0 auto 16px auto;
     color: white;
 }
+
 .rights {
     width: 100%;
     background-color: white;
@@ -215,13 +367,16 @@ footer {
     display: flex;
     align-items: center;
 }
-.rights p{
+
+.rights p {
     width: 80%;
     display: flex;
     margin: 12px auto;
     font-size: 12px;
 }
+
 .rights span {
     color: #55a2ec;
 }
+
 /* -- end of main-footer-container -- */
