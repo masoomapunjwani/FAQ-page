@@ -24,7 +24,7 @@ This section saves a user a great deal of time by providing readily available an
 ## Description
 
 FAQs Page is a summary of potentialy asked questionsby the general public to an organisation and readily provides answers and relevent guidelines.
-This page is essential to any organisation's website and should have a regular update polict to present the most recent pieces of information.
+This page is essential to any organisation's website and should have a regular update policy to present the most recent pieces of information.
 
 ## Screenshot
 
