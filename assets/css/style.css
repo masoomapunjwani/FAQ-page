@@ -281,7 +281,7 @@ a:hover {
 
 .accordion button[aria-expanded='true']+.accordion-content {
     opacity: 1;
-    max-height: 9em;
+    max-height: fit-content;
     transition: all 200ms linear;
     will-change: opacity, max-height;
 }
