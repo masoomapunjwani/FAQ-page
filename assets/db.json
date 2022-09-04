@@ -1,0 +1,103 @@
+{
+  "questionanswer": [
+    {
+     "id": "1",
+            "faq_id": "kaAt00000004DJZEA2",
+            "question": "Q: What is Amazon API Gateway?",
+            "answer": "Amazon API Gateway is a fully managed service that makes it easy for developers to publish, maintain, monitor, and secure APIs at any scale. With a few clicks in the AWS Management Console, you can create an API that acts as a “front door” for applications to access data, business logic, or functionality from your back-end services, such as applications running on Amazon Elastic Compute Cloud (Amazon EC2), Amazon Elastic Container Service (Amazon ECS) or AWS Elastic Beanstalk, code running on AWS Lambda, or any web application. Amazon API Gateway handles all of the tasks involved in accepting and processing up to hundreds of thousands of concurrent API calls, including traffic management, authorization and access control, monitoring, and API version management. Amazon API Gateway has no minimum fees or startup costs. For HTTP APIs and REST APIs, you pay only for the API calls you receive and the amount of data transferred out. For WebSocket APIs, you pay only for messages sent and received and for the time a user/device is connected to the WebSocket API.",
+            "first_published_date": "2016-03-28",
+            "last_published_date": "2018-02-26",
+            "url": "http://legacy.export.gov/article?id=I-m-looking-to-finance-my-export-transaction-What-types-of-U-S-exporting-loans-are-available"
+    },
+    {
+        "id": "2",
+            "faq_id": "kaAt00000004DJFEA2",
+            "question": "Q: Why use Amazon API Gateway?",
+            "answer": "Amazon API Gateway provides developers with a simple, flexible, fully managed, pay-as-you-go service that handles all aspects of creating and operating robust APIs for application back ends. With API Gateway, you can launch new services faster and with reduced investment so you can focus on building your core business services. API Gateway was built to help you with several aspects of creating and managing APIs",
+            "first_published_date": "2016-03-28",
+            "last_published_date": "2018-02-26",
+            "url": "http://legacy.export.gov/article?id=I-m-preparing-an-export-plan-what-should-I-know-about-foreign-import-regulations"
+    },
+    {
+        "id": "3",
+            "faq_id": "kaAt00000004DJ5EAM",
+            "question": "Q: What API types are supported by Amazon API Gateway?",
+            "answer": "Amazon API Gateway offers two options to create RESTful APIs, HTTP APIs and REST APIs, as well as an option to create WebSocket APIs. HTTP API: HTTP APIs are optimized for building APIs that proxy to AWS Lambda functions or HTTP backends, making them ideal for serverless workloads. They do not currently offer API management functionality. REST API: REST APIs offer API proxy functionality and API management features in a single solution. REST APIs offer API management features such as usage plans, API keys, publishing, and monetizing APIs. WebSocket API: WebSocket APIs maintain a persistent connection between connected clients to enable real-time message communication. With WebSocket APIs in API Gateway, you can define backend integrations with AWS Lambda functions, Amazon Kinesis, or any HTTP endpoint to be invoked when messages are received from the connected clients.",
+            "first_published_date": "2016-11-18",
+            "last_published_date": "2018-02-26",
+            "url": "http://legacy.export.gov/article?id=U-S-government-export-help-What-kinds-of-services-are-available"
+    },
+    {
+      "id": "4",
+            "faq_id": "kaAt00000004DJjEAM",
+            "question": "Q: How do I get started with HTTP APIs in API Gateway?",
+            "answer": "To get started with HTTP APIs, you can use the Amazon API Gateway console, the AWS CLI, AWS SDKs, or AWS CloudFormation. To learn more about getting started with HTTP APIs, visit our documentation.",
+            "first_published_date": "2016-03-28",
+            "last_published_date": "2018-02-26",
+            "url": "http://legacy.export.gov/article?id=What-are-some-tips-on-conducting-export-market-research"
+    },
+    {
+         "id": "5",
+            "faq_id": "kaAt00000004DJeEAM",
+            "question": "Q. When creating RESTful APIs, when should I use HTTP APIs and when should I use REST APIs?",
+            "answer": "You can build RESTful APIs using both HTTP APIs and REST APIs in Amazon API Gateway. HTTP APIs are optimized for building APIs that proxy to AWS Lambda functions or HTTP backends, making them ideal for serverless workloads. HTTP APIs are a cheaper and faster alternative to REST APIs, but they do not currently support API management functionality. REST APIs are intended for APIs that require API proxy functionality and API management features in a single solution. HTTP APIs are ideal for: Building proxy APIs for AWS Lambda or any HTTP endpoint Building modern APIs that are equipped with OIDC and OAuth 2 authorization Workloads that are likely to grow very large APIs for latency sensitive workloads REST APIs are ideal for: Customers looking to pay a single price point for an all-inclusive set of features needed to build, manage, and publish their APIs. ",
+            "first_published_date": "2016-11-18",
+            "last_published_date": "2018-02-26",
+            "url": "http://legacy.export.gov/article?id=I-m-looking-at-exporting-to-foreign-markets-how-do-I-prepare-my-product-for-export"
+      },
+    {
+        "id": "6",
+            "faq_id": "kaAt00000004DJPEA2",
+            "question": "Q: With what backends can Amazon API Gateway communicate?",
+            "answer": "Amazon API Gateway can execute AWS Lambda functions in your account, start AWS Step Functions state machines, or call HTTP endpoints hosted on AWS Elastic Beanstalk, Amazon EC2, and also non-AWS hosted HTTP based operations that are accessible via the public Internet.API Gateway also allows you to specify a mapping template to generate static content to be returned, helping you mock your APIs before the backend is ready. You can also integrate API Gateway with other AWS services directly – for example, you could expose an API method in API Gateway that sends data directly to Amazon Kinesis.",
+            "first_published_date": "2016-03-28",
+            "last_published_date": "2018-02-26",
+            "url": "http://legacy.export.gov/article?id=How-can-I-learn-about-complying-with-U-S-export-licensing-and-other-regulations"
+   },
+    {
+          "id": "7",
+            "faq_id": "kaAt00000004DJKEA2",
+            "question": "Q: What is a stage?",
+            "answer": "In Amazon API Gateway, stages are similar to tags. They define the path through which the deployment is accessible. For example, you can define a development stage and deploy your cars API to it. The resource will be accessible at https://www.myapi.com/dev/cars. You can also set up custom domain names to point directly to a stage, so that you don’t have to use the additional path parameter. For example, if you pointed myapi.com directly to the development stage, you could access your cars resource at https://www.myapi.com/cars. Stages can be configured using variables that can be accessed from your API configuration or mapping templates.",
+            "first_published_date": "2016-03-28",
+            "last_published_date": "2018-02-26",
+            "url": "http://legacy.export.gov/article?id=Where-can-I-find-U-S-government-export-help"
+     },
+    {
+            "id": "8",
+            "faq_id": "kaAt00000004DJKEA2",
+            "question": "Q: What are stage variables?",
+            "answer": "Stage variables let you define key/value pairs of configuration values associated with a stage. These values, similarly to environment variables, can be used in your API configuration. For example, you could define the HTTP endpoint for your method integration as a stage variable, and use the variable in your API configuration instead of hardcoding the endpoint – this allows you to use a different endpoint for each stage (e.g. dev, beta, prod) with the same API configuration. Stage variables are also accessible in the mapping templates and can be used to pass configuration parameters to your Lambda or HTTP backend.",
+            "first_published_date": "2016-03-28",
+            "last_published_date": "2018-02-26",
+            "url": "http://legacy.export.gov/article?id=Where-can-I-find-U-S-government-export-help"
+    },
+    {
+	   "id": "9",
+            "faq_id": "kaAt0000000TN1PEAW",
+            "question": "Q: How do I document my API on Amazon API Gateway?",
+            "answer": "All metropolitan Core Based Statistical Area (CBSA) goods export numbers in ITA&#39;s data were tabulated by matching the five-digit zip codes entered on U.S. export declarations with the five-digit zip codes specified for each metropolitan CBSA using concordance files from the Census Bureau’s Geography Division and the U.S. Postal Service. The boundaries of official metropolitan CBSAs are county-based and are defined by the Office of Management and Budget (OMB). A comprehensive listing of the areas is available from OMB and delineation files for current and historical definitions are available from the Census Bureau.Find out more about metropolitan area exports.",
+            "first_published_date": "2016-09-08",
+            "last_published_date": "2016-09-08",
+            "url": "http://legacy.export.gov/article?id=How-is-a-metropolitan-area-defined"
+     },
+    {
+        "id": "10",
+            "faq_id": "kaAt00000008OsTEAU",
+            "question": "Q: How can I avoid creating redundant copies of error messages and other documentation that recurs frequently in my API?",
+            "answer": "In addition to offering standards-conformant API documentation support, API Gateway additionally supports documentation inheritance, making it simple to define a documentation string once and then use it in multiple places. Inheritance simplifies the process of defining API documentation, and can be converted to the standard representation when exporting the API as a Swagger file.",
+            "first_published_date": "2016-03-28",
+            "last_published_date": "2018-02-26",
+            "url": "http://legacy.export.gov/article?id=How-can-my-company-take-advantage-of-U-S-Free-Trade-Agreements"
+    },
+    {
+	    "id": "11",
+            "faq_id": "kaAt00000004DJyEAM",
+            "question": "Q: What is a Lambda authorizer?",
+            "answer": "Lambda authorizers are AWS Lambda functions. With custom request authorizers, you will be able to authorize access to APIs using a bearer token auth strategy such as OAuth. When an API is called, API Gateway checks if a Lambda authorizer is configured, API Gateway then calls the Lambda function with the incoming authorization token. You can use Lambda to implement various authorization strategies (e.g. JWT verification, OAuth provider callout) that return IAM policies which are used to authorize the request. If the policy returned by the authorizer is valid, API Gateway will cache the policy associated with the incoming token for up to 1 hour.",
+            "first_published_date": "2018-02-14",
+            "last_published_date": "2018-02-27",
+            "url": "http://legacy.export.gov/article?id=What-are-some-tips-on-how-to-ship-internationally"
+   }
+  ]
+}
