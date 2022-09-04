@@ -7,11 +7,11 @@ Frequently Asked Questions is a web interface that displays most questions asked
 This section saves a user a great deal of time by providing readily available answers to their clients or potential clients.
 
 ## Table of Content
-[Title](#FAQs-Page)
-[Technologies](#Built-With)
-[Description](#Description)
-[Screenshot](#screenshot)
-[Getting Started](#Getting-Started)
+- [Title](#FAQs-Page)
+- [Technologies](#Built-With)
+- [Description](#Description)
+- [Screenshot](#screenshot)
+- [Getting Started](#Getting-Started)
 
 
 ## Built With
@@ -28,7 +28,7 @@ This page is essential to any organisation's website and should have a regular u
 
 ## Screenshot
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](./assets/img/Screenshot1.png)
 
 ## Live Demo Link
 
@@ -46,8 +46,7 @@ You need to have installed npm and JSON-server on your local machine.
 
 ### Setup
 Clone the project using these links depending on your local environment:
-- [https](https://github.com/david-commit/FAQ-page.git)
-- [ssh](git@github.com:david-commit/FAQ-page.git)
+- [https](https://github.com/david-commit/FAQ-page.git) or [ssh](git@github.com:david-commit/FAQ-page.git)
 
 ### Install
 - On the root folder, locate the ``index.html`` and open with your IDE
